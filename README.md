@@ -41,7 +41,7 @@ To enable image reconstruction and mask generation, ensure the necessary files a
 ## Usage
 - Open the **Streamlit Web Interface** to monitor and configure the transmission.
 - The system will display **sampled images, reconstructed images, and full images**.
-- Adjust **Lambda Parameter** and **Interval Frames** for different sampling and reconstruction settings.
+- Adjust **Lambda Parameter** to adjsut the weight of the contour mask on the generated mask by the model, and **Interval Frames** for then umber of uncompressed images received before sending another mask to the camera.
 
 
 ## Screenshot
@@ -50,6 +50,7 @@ To enable image reconstruction and mask generation, ensure the necessary files a
 ## Notes
 - The `requirements.txt` contains additional versions from past projects. If installation issues arise, manually install necessary packages.
 - Ensure proper network connectivity between the client and server.
+- In this project, PyTorch 2.0.0+cu118 was used which corresponds to CUDA version 11.8.
 
 ## License
 MIT License © 2025 Abdelmouhaimen Sarhane
